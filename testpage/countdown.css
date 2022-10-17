@@ -1,0 +1,642 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:900");
+html,
+.wrapper {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+.timer {
+    position: relative;
+    box-shadow: 0px 10px 0px 20px #ff5e8f;
+    border: 20px solid #ff7e5e;
+    border-style: none none solid;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    color: #ff7e5e;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin: 0 auto;
+    font-size: 50px;
+    animation: noborder 60s 1, alarm 1s infinite;
+    animation-delay: 0s, 60s;
+    animation-fill-mode: forwards;
+}
+.timer div#min,
+.timer #sectens,
+.timer #secones {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.timer div#min span:not(:first-child),
+.timer #sectens span:not(:first-child),
+.timer #secones span:not(:first-child) {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+}
+.timer #colon {
+    position: relative;
+}
+.timer #min span#min_1 {
+    animation: popout 1s 1;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+.timer #min span#min_0 {
+    animation: popin 1s 1;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+.timer #sectens span#sectens_6 {
+    animation: popout 1s 1;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+.timer #sectens span#sectens_5 {
+    animation: popin 1s 1s 1, popout2 1s 1s 1;
+    animation-delay: 0s, 10s;
+    animation-fill-mode: forwards;
+}
+.timer #sectens span#sectens_4 {
+    animation: popin 1s 1s 1, popout2 1s 1s 1;
+    animation-delay: 10s, 20s;
+    animation-fill-mode: forwards;
+}
+.timer #sectens span#sectens_3 {
+    animation: popin 1s 1s 1, popout2 1s 1s 1;
+    animation-delay: 20s, 30s;
+    animation-fill-mode: forwards;
+}
+.timer #sectens span#sectens_2 {
+    animation: popin 1s 1s 1, popout2 1s 1s 1;
+    animation-delay: 30s, 40s;
+    animation-fill-mode: forwards;
+}
+.timer #sectens span#sectens_1 {
+    animation: popin 1s 1s 1, popout2 1s 1s 1;
+    animation-delay: 40s, 50s;
+    animation-fill-mode: forwards;
+}
+.timer #sectens span#sectens_0 {
+    animation: popin 1s 1s 1;
+    animation-delay: 50s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_60 {
+    animation: popout 1s 1;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_59 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 0s, 1s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_58 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 1s, 2s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_57 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 2s, 3s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_56 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 3s, 4s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_55 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 4s, 5s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_54 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 5s, 6s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_53 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 6s, 7s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_52 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 7s, 8s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_51 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 8s, 9s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_50 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 9s, 10s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_49 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 10s, 11s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_48 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 11s, 12s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_47 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 12s, 13s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_46 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 13s, 14s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_45 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 14s, 15s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_44 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 15s, 16s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_43 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 16s, 17s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_42 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 17s, 18s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_41 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 18s, 19s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_40 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 19s, 20s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_39 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 20s, 21s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_38 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 21s, 22s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_37 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 22s, 23s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_36 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 23s, 24s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_35 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 24s, 25s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_34 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 25s, 26s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_33 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 26s, 27s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_32 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 27s, 28s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_31 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 28s, 29s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_30 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 29s, 30s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_29 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 30s, 31s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_28 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 31s, 32s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_27 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 32s, 33s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_26 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 33s, 34s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_25 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 34s, 35s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_24 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 35s, 36s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_23 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 36s, 37s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_22 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 37s, 38s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_21 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 38s, 39s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_20 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 39s, 40s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_19 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 40s, 41s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_18 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 41s, 42s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_17 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 42s, 43s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_16 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 43s, 44s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_15 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 44s, 45s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_14 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 45s, 46s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_13 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 46s, 47s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_12 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 47s, 48s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_11 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 48s, 49s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_10 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 49s, 50s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_9 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 50s, 51s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_8 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 51s, 52s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_7 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 52s, 53s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_6 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 53s, 54s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_5 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 54s, 55s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_4 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 55s, 56s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_3 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 56s, 57s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_2 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 57s, 58s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_1 {
+    animation: popin 1s 1, popout2 1s 1;
+    animation-delay: 58s, 59s;
+    animation-fill-mode: forwards;
+}
+.timer #secones span#secones_0 {
+    animation: popin 1s 1;
+    animation-delay: 59s;
+    animation-fill-mode: forwards;
+}
+@-moz-keyframes popout {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-150px) scale(0.8);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes popout {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-150px) scale(0.8);
+        opacity: 0;
+    }
+}
+@-o-keyframes popout {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-150px) scale(0.8);
+        opacity: 0;
+    }
+}
+@keyframes popout {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-150px) scale(0.8);
+        opacity: 0;
+    }
+}
+@-moz-keyframes popout2 {
+    0% {
+        transform: translateY(-150px) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-300px) scale(0.8);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes popout2 {
+    0% {
+        transform: translateY(-150px) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-300px) scale(0.8);
+        opacity: 0;
+    }
+}
+@-o-keyframes popout2 {
+    0% {
+        transform: translateY(-150px) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-300px) scale(0.8);
+        opacity: 0;
+    }
+}
+@keyframes popout2 {
+    0% {
+        transform: translateY(-150px) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-300px) scale(0.8);
+        opacity: 0;
+    }
+}
+@-moz-keyframes popin {
+    0% {
+        transform: translateY(0) scale(0.8);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-150px) scale(1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes popin {
+    0% {
+        transform: translateY(0) scale(0.8);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-150px) scale(1);
+        opacity: 1;
+    }
+}
+@-o-keyframes popin {
+    0% {
+        transform: translateY(0) scale(0.8);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-150px) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes popin {
+    0% {
+        transform: translateY(0) scale(0.8);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-150px) scale(1);
+        opacity: 1;
+    }
+}
+@-moz-keyframes alarm {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    10% {
+        transform: rotateZ(3deg);
+    }
+    30% {
+        transform: rotateZ(-3deg);
+    }
+    45% {
+        transform: rotateZ(2deg);
+    }
+    60% {
+        transform: rotateZ(-6deg);
+    }
+    80% {
+        transform: rotateZ(10deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+@-webkit-keyframes alarm {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    10% {
+        transform: rotateZ(3deg);
+    }
+    30% {
+        transform: rotateZ(-3deg);
+    }
+    45% {
+        transform: rotateZ(2deg);
+    }
+    60% {
+        transform: rotateZ(-6deg);
+    }
+    80% {
+        transform: rotateZ(10deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+@-o-keyframes alarm {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    10% {
+        transform: rotateZ(3deg);
+    }
+    30% {
+        transform: rotateZ(-3deg);
+    }
+    45% {
+        transform: rotateZ(2deg);
+    }
+    60% {
+        transform: rotateZ(-6deg);
+    }
+    80% {
+        transform: rotateZ(10deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+@keyframes alarm {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    10% {
+        transform: rotateZ(3deg);
+    }
+    30% {
+        transform: rotateZ(-3deg);
+    }
+    45% {
+        transform: rotateZ(2deg);
+    }
+    60% {
+        transform: rotateZ(-6deg);
+    }
+    80% {
+        transform: rotateZ(10deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+@-moz-keyframes noborder {
+    from {
+        border: 5px solid #ff7e5e;
+    }
+    to {
+        border: 5px solid #fff;
+    }
+}
+@-webkit-keyframes noborder {
+    from {
+        border: 5px solid #ff7e5e;
+    }
+    to {
+        border: 5px solid #fff;
+    }
+}
+@-o-keyframes noborder {
+    from {
+        border: 5px solid #ff7e5e;
+    }
+    to {
+        border: 5px solid #fff;
+    }
+}
+@keyframes noborder {
+    from {
+        border: 5px solid #ff7e5e;
+    }
+    to {
+        border: 5px solid #fff;
+    }
+}
